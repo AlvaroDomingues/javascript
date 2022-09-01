@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DETRAN</title>
+</head>
+<body>
+  <h1>Insira sua velocidade em km/h</h1>
+  <input type="number" name="txtvel" id="txtvel">
+  <input type="button" value="Verificar" onclick="calcular()">
+  <div id="res">
+
+  </div>
+  <script>
+    function calcular(){
+      var vel = document.getElementById('txtvel')
+      var res = document.getElementById('res')
+      var vel = Number(txtvel.value)
+      if (vel >= 80){
+      res.innerHTML = 'Você está acima da velocidade permitida'
+      }
+      else {
+      res.innerHTML = 'Você está em uma velocidade segura , tenha uma boa viagem!'
+      }
+
+    }
+  </script>
+
+</body>
+</html>
